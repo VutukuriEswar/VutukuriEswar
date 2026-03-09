@@ -38,21 +38,41 @@
 
 ## 🤝 Team Projects
 
-[![Unemployment Forecasting](https://github-readme-stats.vercel.app/api/pin/?username=Satwika8932&repo=Unemployment_Forecasting_Model&theme=tokyonight)](https://github.com/Satwika8932/Unemployment_Forecasting_Model)
+<p align="center">
 
-[![ImageDehazing](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=ImageDehazing&theme=tokyonight)](https://github.com/VutukuriEswar/ImageDehazing)
+<a href="https://github.com/Satwika8932/Unemployment_Forecasting_Model">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Satwika8932&repo=Unemployment_Forecasting_Model&theme=tokyonight"/>
+</a>
 
-[![FlexiSched](https://github-readme-stats.vercel.app/api/pin/?username=ucs200525&repo=FlexiSched&theme=tokyonight)](https://github.com/ucs200525/FlexiSched)
+<a href="https://github.com/VutukuriEswar/ImageDehazing">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=ImageDehazing&theme=tokyonight"/>
+</a>
 
-[![SmartWardrobe](https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SmartWardrobe&theme=tokyonight)](https://github.com/gandrala-rishika/SmartWardrobe)
+<a href="https://github.com/ucs200525/FlexiSched">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=ucs200525&repo=FlexiSched&theme=tokyonight"/>
+</a>
 
-[![FacultyHub](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=FacultyHub&theme=tokyonight)](https://github.com/VutukuriEswar/FacultyHub)
+<a href="https://github.com/gandrala-rishika/SmartWardrobe">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SmartWardrobe&theme=tokyonight"/>
+</a>
 
-[![GroupSync](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=GroupSync&theme=tokyonight)](https://github.com/VutukuriEswar/GroupSync)
+<a href="https://github.com/VutukuriEswar/FacultyHub">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=FacultyHub&theme=tokyonight"/>
+</a>
 
-[![SentimentScope](https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SentimentScope&theme=tokyonight)](https://github.com/gandrala-rishika/SentimentScope)
+<a href="https://github.com/VutukuriEswar/GroupSync">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=GroupSync&theme=tokyonight"/>
+</a>
 
-[![QuizCraft](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=QuizCraft&theme=tokyonight)](https://github.com/VutukuriEswar/QuizCraft)
+<a href="https://github.com/gandrala-rishika/SentimentScope">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SentimentScope&theme=tokyonight"/>
+</a>
+
+<a href="https://github.com/VutukuriEswar/QuizCraft">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=QuizCraft&theme=tokyonight"/>
+</a>
+
+</p>
 
 ---
 

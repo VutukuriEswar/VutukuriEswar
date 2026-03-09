@@ -41,35 +41,35 @@
 <p align="center">
 
 <a href="https://github.com/Satwika8932/Unemployment_Forecasting_Model">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Satwika8932&repo=Unemployment_Forecasting_Model&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Satwika8932&repo=Unemployment_Forecasting_Model&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/VutukuriEswar/ImageDehazing">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=ImageDehazing&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=ImageDehazing&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/ucs200525/FlexiSched">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=ucs200525&repo=FlexiSched&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ucs200525&repo=FlexiSched&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/gandrala-rishika/SmartWardrobe">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SmartWardrobe&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SmartWardrobe&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/VutukuriEswar/FacultyHub">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=FacultyHub&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=FacultyHub&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/VutukuriEswar/GroupSync">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=GroupSync&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=GroupSync&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/gandrala-rishika/SentimentScope">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SentimentScope&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SentimentScope&theme=tokyonight&show_owner=true" />
 </a>
 
 <a href="https://github.com/VutukuriEswar/QuizCraft">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=QuizCraft&theme=tokyonight"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=QuizCraft&theme=tokyonight&show_owner=true" />
 </a>
 
 </p>

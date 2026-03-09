@@ -17,20 +17,19 @@
 
 - 🔭 Exploring **Deep Learning & Generative AI**
 - 🌱 Learning **advanced ML systems**
-- 💬 Ask me about **Python, ML, and AI**
 
 ---
 
 # 🧠 Tech Stack
 
 ### Languages
-![Python](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python)
+![Python](https://img.shields.io/badge/Python-black?style=for-the-badge&logo=python)
 ![Java](https://img.shields.io/badge/Java-red?style=for-the-badge&logo=java)
 ![C](https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c)
 ![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)
 
 ### AI / ML
-![TensorFlow](https://img.shields.io/badge/TensorFlow-orange?style=for-the-badge&logo=tensorflow)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-green?style=for-the-badge&logo=tensorflow)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-blue?style=for-the-badge&logo=scikitlearn)
 ![Pandas](https://img.shields.io/badge/Pandas-black?style=for-the-badge&logo=pandas)
 ![NumPy](https://img.shields.io/badge/Numpy-blue?style=for-the-badge&logo=numpy)
@@ -74,18 +73,6 @@ https://github.com/gandrala-rishika/SentimentScope
 ## 🧑‍💻 Personal Projects
 
 *(Coming soon)*
-
----
-
-# 📊 GitHub Stats
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=VutukuriEswar&show_icons=true&theme=tokyonight"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VutukuriEswar&layout=compact&theme=tokyonight"/>
-
-</p>
 
 ---
 

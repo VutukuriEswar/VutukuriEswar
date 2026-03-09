@@ -38,29 +38,21 @@
 
 ## 🤝 Team Projects
 
-- **FlexiSched**  
-https://github.com/ucs200525/FlexiSched
+[![Unemployment Forecasting](https://github-readme-stats.vercel.app/api/pin/?username=Satwika8932&repo=Unemployment_Forecasting_Model&theme=tokyonight)](https://github.com/Satwika8932/Unemployment_Forecasting_Model)
 
-- **SmartWardrobe**  
-https://github.com/gandrala-rishika/SmartWardrobe
+[![ImageDehazing](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=ImageDehazing&theme=tokyonight)](https://github.com/VutukuriEswar/ImageDehazing)
 
-- **Unemployment Forecasting Model**  
-https://github.com/Satwika8932/Unemployment_Forecasting_Model
+[![FlexiSched](https://github-readme-stats.vercel.app/api/pin/?username=ucs200525&repo=FlexiSched&theme=tokyonight)](https://github.com/ucs200525/FlexiSched)
 
-- **Image Dehazing**  
-https://github.com/VutukuriEswar/ImageDehazing
+[![SmartWardrobe](https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SmartWardrobe&theme=tokyonight)](https://github.com/gandrala-rishika/SmartWardrobe)
 
-- **FacultyHub**  
-https://github.com/VutukuriEswar/FacultyHub
+[![FacultyHub](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=FacultyHub&theme=tokyonight)](https://github.com/VutukuriEswar/FacultyHub)
 
-- **QuizCraft**  
-https://github.com/VutukuriEswar/QuizCraft
+[![GroupSync](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=GroupSync&theme=tokyonight)](https://github.com/VutukuriEswar/GroupSync)
 
-- **GroupSync**  
-https://github.com/VutukuriEswar/GroupSync
+[![SentimentScope](https://github-readme-stats.vercel.app/api/pin/?username=gandrala-rishika&repo=SentimentScope&theme=tokyonight)](https://github.com/gandrala-rishika/SentimentScope)
 
-- **SentimentScope**  
-https://github.com/gandrala-rishika/SentimentScope
+[![QuizCraft](https://github-readme-stats.vercel.app/api/pin/?username=VutukuriEswar&repo=QuizCraft&theme=tokyonight)](https://github.com/VutukuriEswar/QuizCraft)
 
 ---
 

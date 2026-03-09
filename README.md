@@ -1,12 +1,6 @@
 <h1 align="center">Hi 👋, I'm Eswar Vutukuri</h1>
 <h3 align="center">AI & Machine Learning Developer | VIT-AP University</h3>
 
-<p align="center">
-<a href="https://github.com/VutukuriEswar">
-<img src="https://komarev.com/ghpvc/?username=VutukuriEswar&label=Profile%20views&color=0e75b6&style=flat"/>
-</a>
-</p>
-
 ---
 
 # 🚀 About Me
@@ -26,10 +20,10 @@
 ![Python](https://img.shields.io/badge/Python-black?style=for-the-badge&logo=python)
 ![Java](https://img.shields.io/badge/Java-red?style=for-the-badge&logo=java)
 ![C](https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c)
-![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)
+![C++](https://img.shields.io/badge/C++-green?style=for-the-badge&logo=cplusplus)
 
 ### AI / ML
-![TensorFlow](https://img.shields.io/badge/TensorFlow-green?style=for-the-badge&logo=tensorflow)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-yellow?style=for-the-badge&logo=tensorflow)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-blue?style=for-the-badge&logo=scikitlearn)
 ![Pandas](https://img.shields.io/badge/Pandas-black?style=for-the-badge&logo=pandas)
 ![NumPy](https://img.shields.io/badge/Numpy-blue?style=for-the-badge&logo=numpy)

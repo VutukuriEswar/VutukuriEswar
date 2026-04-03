@@ -104,6 +104,10 @@
 <img src="https://opengraph.githubassets.com/1/VutukuriEswar/QuizCraft" width="32%"/>
 </a>
 
+<a href="https://github.com/subhashlucky555/StoryForge">
+<img src="https://opengraph.githubassets.com/1/subhashlucky555/StoryForge" width="32%"/>
+</a>
+
 </p>
 
 ---

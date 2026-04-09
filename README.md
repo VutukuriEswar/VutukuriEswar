@@ -73,39 +73,43 @@
 <p align="center">
 
 <a href="https://github.com/Satwika8932/Unemployment_Forecasting_Model">
-<img src="https://opengraph.githubassets.com/1/Satwika8932/Unemployment_Forecasting_Model" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/Satwika8932/Unemployment_Forecasting_Model" width="24%"/>
 </a>
 
 <a href="https://github.com/VutukuriEswar/ImageDehazing">
-<img src="https://opengraph.githubassets.com/1/VutukuriEswar/ImageDehazing" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/ImageDehazing" width="24%"/>
 </a>
 
 <a href="https://github.com/ucs200525/FlexiSched">
-<img src="https://opengraph.githubassets.com/1/ucs200525/FlexiSched" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/ucs200525/FlexiSched" width="24%"/>
 </a>
 
 <a href="https://github.com/gandrala-rishika/SmartWardrobe">
-<img src="https://opengraph.githubassets.com/1/gandrala-rishika/SmartWardrobe" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/gandrala-rishika/SmartWardrobe" width="24%"/>
 </a>
 
 <a href="https://github.com/VutukuriEswar/FacultyHub">
-<img src="https://opengraph.githubassets.com/1/VutukuriEswar/FacultyHub" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/FacultyHub" width="24%"/>
 </a>
 
 <a href="https://github.com/VutukuriEswar/GroupSync">
-<img src="https://opengraph.githubassets.com/1/VutukuriEswar/GroupSync" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/GroupSync" width="24%"/>
 </a>
 
 <a href="https://github.com/gandrala-rishika/SentimentScope">
-<img src="https://opengraph.githubassets.com/1/gandrala-rishika/SentimentScope" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/gandrala-rishika/SentimentScope" width="24%"/>
 </a>
 
 <a href="https://github.com/VutukuriEswar/QuizCraft">
-<img src="https://opengraph.githubassets.com/1/VutukuriEswar/QuizCraft" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/QuizCraft" width="24%"/>
 </a>
 
 <a href="https://github.com/subhashlucky555/StoryForge">
-<img src="https://opengraph.githubassets.com/1/subhashlucky555/StoryForge" width="32%"/>
+<img src="https://opengraph.githubassets.com/1/subhashlucky555/StoryForge" width="24%"/>
+</a>
+
+<a href="https://github.com/VutukuriEswar/NewsLens">
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/NewsLens" width="24%"/>
 </a>
 
 </p>
@@ -122,11 +126,11 @@
 
 <p align="center">
 
-<a href="mailto:youremail@example.com">
+<a href="mailto:vutukurieswar@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
-<a href="https://www.linkedin.com/in/YOURUSERNAME">
+<a href="https://www.linkedin.com/in/eswar-vutukuri">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 

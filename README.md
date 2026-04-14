@@ -112,6 +112,10 @@
 <img src="https://opengraph.githubassets.com/1/VutukuriEswar/NewsLens" width="24%"/>
 </a>
 
+<a href="https://github.com/vaishnavivutukuri/Resonance">
+<img src="https://opengraph.githubassets.com/1/vaishnavivutukuri/Resonance" width="24%"/>
+</a>
+
 </p>
 
 ---

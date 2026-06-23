@@ -14,7 +14,7 @@
 
 🎓 **B.Tech CSE (AI & ML)** — VIT-AP University
 
-📊 **CGPA: 8.75 / 10**
+📊 **CGPA: 8.71 / 10**
 
 🧠 Interested in Artificial Intelligence, Machine Learning, and Deep Learning
 

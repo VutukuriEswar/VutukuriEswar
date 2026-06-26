@@ -122,7 +122,9 @@
 
 ## 🧑‍💻 Personal Projects
 
-🚧 **Coming Soon**
+<a href="https://github.com/VutukuriEswar/Diverge">
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/Diverge" width="24%"/>
+</a>
 
 ---
 

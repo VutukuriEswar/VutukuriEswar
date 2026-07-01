@@ -126,6 +126,10 @@
 <img src="https://opengraph.githubassets.com/1/VutukuriEswar/Diverge" width="24%"/>
 </a>
 
+<a href="https://github.com/VutukuriEswar/Itihasa">
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/Itihasa" width="24%"/>
+</a>
+
 ---
 
 <h2 align="center">🌐 Connect With Me</h2>

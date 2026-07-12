@@ -4,7 +4,7 @@
 
 <p align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=blur&height=300&color=gradient&text=Welcome&textBg=false&fontColor=00F7FF&fontSize=45&reversal=false&animation=fadeIn"/>
+<img src="https://raw.githubusercontent.com/VutukuriEswar/VutukuriEswar/main/assets/ascii-art.svg"/>
 
 </p>
 

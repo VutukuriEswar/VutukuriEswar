@@ -16,12 +16,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Generate typing SVG
+        shell: python3 {0}
         run: |
-          python3 << 'PYTHON_SCRIPT'
           import html
           import os
-          from textwrap import dedent
 
           OUTPUT_PATH = "assets/ascii-art.svg"
 
@@ -29,9 +33,13 @@ jobs:
           CHAR_WIDTH = FONT_SIZE * 0.6
           LINE_HEIGHT = FONT_SIZE
           PADDING = 12
-          LINE_DELAY = 0.05  # Seconds between each line appearing
-          
-          ASCII_ART = dedent(""":++==+++++++++++++++++++=++++++++++++++++++++++=++=+=++++++++++++++++++++++===++==++===============.
+          LINE_DELAY = 0.05
+
+          # GitHub Dark Mode Colors (Hardcoded to bypass GitHub's SVG CSS sanitizer)
+          BG_COLOR = "#0d1117"
+          FG_COLOR = "#c9d1d9"
+
+          ASCII_ART = """:++==+++++++++++++++++++=++++++++++++++++++++++=++=+=++++++++++++++++++++++===++==++===============.
           +%%%%%%%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%%@%@%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%%%=
           +%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%=
           +%%%%@%%%%%%%%%%@@@%@%@%%%%@@%%%%%%%%%@%%%%%%%%%@%%%%%%%%%%%%%%%@@@%@%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%=
@@ -127,17 +135,14 @@ jobs:
           :#%%%%%@%%#%%. @@%#%%@%%%%%%%%%@@@%%%@%%%%%%%@@@  @@@@  @@%%##**#%%%%%%%@%%%@+-%++**###+.#@%%%%%%%%:
           :%%%%%%%##%%%.+@%###%%#@%#%#%%%%%%#%#%#%%%####@@= @@@  @@@%%##**####%%%%%%%@%+-=*######--@%#%%%%%#%:
           :####%#%##%#+.@@%%%%##%######%%%%%%%%%%%%%%@@@@@@ .@@ =@@@%###*####%%%%%%%%@@+-*%%#***#.#@@%%%@%%%%:
-          .-:::::....  ==......::...:.::.:::::::::::::::.:=. +  =%==-...     .:-------.            ==-------- 
-          """)
+          .-:::::....  ==......::...:.::.:::::::::::::::.:=. +  =%==-...     .:-------.            ==-------- """
 
           lines = [l.rstrip() for l in ASCII_ART.split("\n")]
-          
-          # Strip leading/trailing empty lines caused by triple-quote formatting
           while lines and lines[-1] == "":
               lines.pop()
           while lines and lines[0] == "":
               lines.pop(0)
-              
+
           if not lines:
               raise SystemExit("Empty art")
 
@@ -153,49 +158,28 @@ jobs:
           groups = []
           for i, line in enumerate(lines):
               escaped_line = html.escape(line, quote=False)
-              tspan = f'<tspan x="{x0}" y="{round(y0 + i * LINE_HEIGHT, 2)}">{escaped_line}</tspan>'
+              y = round(y0 + i * LINE_HEIGHT, 2)
               begin_time = i * LINE_DELAY
               
-              # Each line starts invisible (opacity="0"), snaps to visible (dur="0.01s"), 
-              # and stays visible (fill="freeze", repeatCount="1") so it only plays once.
+              # FIX 1: Move <g> OUTSIDE <text> and FIX 2: Hardcode fill colors
               groups.append(
                   f'<g opacity="0">\n'
                   f'  <animate attributeName="opacity" values="0;1" keyTimes="0;1" '
                   f'dur="0.05s" begin="{begin_time:.3f}s" fill="freeze" repeatCount="1"/>\n'
-                  f'  {tspan}\n'
+                  f'  <text fill="{FG_COLOR}" xml:space="preserve"><tspan x="{x0}" y="{y}">{escaped_line}</tspan></text>\n'
                   f'</g>'
               )
 
-          # Add a blinking cursor that appears after the last line finishes typing
           total_type_time = (len(lines) - 1) * LINE_DELAY + 0.1
           last_line_len = len(lines[-1])
           cursor_x = round(PADDING + last_line_len * CHAR_WIDTH + 2, 2)
           cursor_y = round(y0 + (len(lines) - 1) * LINE_HEIGHT - FONT_SIZE + 2, 2)
 
-          cursor = f'''<rect x="{cursor_x}" y="{cursor_y}" width="{round(CHAR_WIDTH*0.6, 2)}" height="{FONT_SIZE}" fill="var(--fg-color)" opacity="0">
-            <animate attributeName="opacity" values="1;0" dur="0.6s" begin="{total_type_time:.3f}s" repeatCount="indefinite" />
-          </rect>'''
+          cursor = f'<rect x="{cursor_x}" y="{cursor_y}" width="{round(CHAR_WIDTH*0.6, 2)}" height="{FONT_SIZE}" fill="{FG_COLOR}" opacity="0"><animate attributeName="opacity" values="1;0" dur="0.6s" begin="{total_type_time:.3f}s" repeatCount="indefinite" /></rect>'
 
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{canvas_w}px" height="{canvas_h}px" viewBox="0 0 {canvas_w} {canvas_h}" font-family="Consolas,'Courier New',monospace" font-size="{FONT_SIZE}px">
-          <style>
-          :root {{
-            --bg-color: #ffffff;
-            --fg-color: #1f2328;
-          }}
-          @media (prefers-color-scheme: dark) {{
-            :root {{
-              --bg-color: #0d1117;
-              --fg-color: #c9d1d9;
-            }}
-          }}
-          rect.bg {{ fill: var(--bg-color); }}
-          text.art {{ fill: var(--fg-color); white-space: pre; }}
-          tspan {{ white-space: pre; }}
-          </style>
-          <rect class="bg" width="{canvas_w}" height="{canvas_h}" rx="12"/>
-          <text class="art" xml:space="preserve">
+          <rect width="{canvas_w}" height="{canvas_h}" rx="12" fill="{BG_COLOR}"/>
           {chr(10).join(groups)}
-          </text>
           {cursor}
           </svg>'''
 
@@ -203,7 +187,6 @@ jobs:
           with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
               f.write(svg)
           print(f"Wrote {OUTPUT_PATH}: {canvas_w}x{canvas_h}px, Terminal reveal animation")
-          PYTHON_SCRIPT
 
       - name: Commit updated SVG
         run: |

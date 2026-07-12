@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     paths:
-      - '.github/workflows/ascii-reveal.yml'
+      - '.github/workflows/ascii.yml'
 
 permissions:
   contents: write

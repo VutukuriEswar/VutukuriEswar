@@ -150,11 +150,11 @@
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="1.850s" fill="freeze" repeatCount="1"/>
-  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="316">=%%%%%%%%@%%%%%@%%%%%%%%@@@@%%@%###@@*-@@@*=-=---:::::...:-+#*#%*+%%@@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%-</tspan></text>
+  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="316">=%%%%%%%%@%%%%%@%%%%%%%%@@@@%%@%###@@*-@@@*=-=---:::::...:-+#*#%*  +%%@@@%%%%%%%%%%%%%%%%%%%%%%%%%%-</tspan></text>
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="1.900s" fill="freeze" repeatCount="1"/>
-  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="324">=%%%%%%%%%%%%%%@%%%%%%%%%@@%%@%%%@@*.=...:+*#%#+=-==++===*#+:.@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-</tspan></text>
+  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="324">=%%%%%%%%%%%%%%@%%%%%%%%%@@%%@%%%@@*.=...:+*#%#+=-==++===*#+:.  @%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-</tspan></text>
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="1.950s" fill="freeze" repeatCount="1"/>
@@ -162,15 +162,15 @@
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="2.000s" fill="freeze" repeatCount="1"/>
-  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="340">=%%%%%%%%%%%%%%%%%%%%%%@%%%%%@@%@@. =*===---==-:.    ..--::::* =@%%%@@@%%%%%%%%%%@%%%%%%%%%%%%%%%%%-</tspan></text>
+  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="340">=%%%%%%%%%%%%%%%%%%%%%%@%%%%%@@%@@. =*===---==-:.    ..--::::*  =@%%%@@@%%%%%%%%%%@%%%%%%%%%%%%%%%%-</tspan></text>
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="2.050s" fill="freeze" repeatCount="1"/>
-  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="348">=%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%@@  .----==----=+===---::::..+ @%%@@@@@%%%%%%%%%%%%%#%%%%%%%%%%%%%%-</tspan></text>
+  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="348">=%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%@@  .----==----=+===---::::..+  @%%@@@@@%%%%%%%%%%%%%#%%%%%%%%%%%%%-</tspan></text>
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="2.100s" fill="freeze" repeatCount="1"/>
-  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="356">+%%%%%%%@@@%%%%%%%%%%%@%@@@@@@@@@@  .---======--:-:::::.:::::- *%%%%%%%%%%%%%%%#%%%@%%%%%%%%%%%%%%%-</tspan></text>
+  <text fill="#c9d1d9" xml:space="preserve"><tspan x="12" y="356">+%%%%%%%@@@%%%%%%%%%%%@%@@@@@@@@@@  .---======--:-:::::.:::::-  *%%%%%%%%%%%%%%%#%%%@%%%%%%%%%%%%%%-</tspan></text>
 </g>
 <g opacity="0">
   <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.05s" begin="2.150s" fill="freeze" repeatCount="1"/>

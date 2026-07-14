@@ -19,6 +19,8 @@
       <img src="https://skillicons.dev/icons?i=tensorflow,pytorch&theme=dark"/>
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="50"/>
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="50"/><br>
+      <h4> 🌐 Full Stack Development</h4>
+      <img src="https://skillicons.dev/icons?i=react,fastapi,mongodb&theme=dark"/><br>
       <h4> 🛠 Tools:</h4>
       <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark"/><br><br>
     </td>

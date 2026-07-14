@@ -5,8 +5,7 @@
 <table border="0">
   <tr>
     <td width="50%" valign="top">
-      <img src="https://raw.githubusercontent.com/VutukuriEswar/VutukuriEswar/main/assets/ascii-art-dark.svg#gh-dark-mode-only" width="100%" />
-      <img src="https://raw.githubusercontent.com/VutukuriEswar/VutukuriEswar/main/assets/ascii-art-light.svg#gh-light-mode-only" width="100%" />
+      <img src="https://raw.githubusercontent.com/VutukuriEswar/VutukuriEswar/main/assets/ascii-art.svg" width="100%" />
     </td>
     <td width="50%" valign="top">
       <h3> 🚀 About Me </h3>

@@ -26,6 +26,8 @@
 </table>
 <br>
 
+---
+
 # 🐍 Contribution Snake
 
 <p align="center">
@@ -94,12 +96,16 @@
 
 <p align="center">
 
-<a href="https://github.com/VutukuriEswar/Diverge">
-<img src="https://opengraph.githubassets.com/1/VutukuriEswar/Diverge" width="24%"/>
-</a>
-
 <a href="https://github.com/VutukuriEswar/Itihasa">
 <img src="https://opengraph.githubassets.com/1/VutukuriEswar/Itihasa" width="24%"/>
+</a>
+
+<a href="https://github.com/VutukuriEswar/AgriSense">
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/AgriSense" width="24%"/>
+</a>
+
+<a href="https://github.com/VutukuriEswar/Diverge">
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/Diverge" width="24%"/>
 </a>
 
 </p>

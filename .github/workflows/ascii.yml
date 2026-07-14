@@ -21,11 +21,13 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate typing SVGs (Light & Dark)
+      - name: Generate typing SVG
         shell: python3 {0}
         run: |
           import html
           import os
+
+          OUTPUT_PATH = "assets/ascii-art.svg"
 
           FONT_SIZE = 8
           CHAR_WIDTH = FONT_SIZE * 0.6
@@ -33,19 +35,9 @@ jobs:
           PADDING = 12
           LINE_DELAY = 0.05
 
-          # Theme configurations
-          THEMES = {
-              "dark": {
-                  "bg": "#0d1117",
-                  "fg": "#c9d1d9",
-                  "output": "assets/ascii-art-dark.svg"
-              },
-              "light": {
-                  "bg": "#ffffff",
-                  "fg": "#24292f",
-                  "output": "assets/ascii-art-light.svg"
-              }
-          }
+          # GitHub Dark Mode Colors (Hardcoded to bypass GitHub's SVG CSS sanitizer)
+          BG_COLOR = "#0d1117"
+          FG_COLOR = "#c9d1d9"
 
           ASCII_ART = """:++==+++++++++++++++++++=++++++++++++++++++++++=++=+=++++++++++++++++++++++===++==++===============.
           +%%%%%%%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%%@%@%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%%%=
@@ -105,7 +97,7 @@ jobs:
           *@@@@@@@%%%@@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.-*+-::--. .@@@@@=    @@@@@@@@@@@@@%#@@@@@@%#%#%@@%%%-
           *@@@@%%%%@@@@@%%%@@@@@@@@@@@@@@@@@@@@@@ .@@@@@@*-%@#=...@@@.   +*   : .@@@@@%@@@@@#%@@@%##%@#@%#%%-
           *+@@@%@@@@%%%@%%%@@@@@@@@@@@@@@@@@@@ ...-. +@@@@@-=#*:*@*...-*@@+ ..@=.  .@@@%@@@@%#@@%**%%@%%##@%-
-          *=@@@@@@@%@%@@@@@@@%@%@@@@@@@@@    @@%#*+:.  .@@+-+%@*+*%@%#@@    @%%%#:+@@%%@@@@%#%#*#@@%#*%@%-
+          *=@@@@@@@%@%@@@@@@@%@%@@@@@@@@@    @@%#*+:.  .@@+-+%@*+*%@%#@@    @%%%#:+@@%%@@@@%#%#*#%@@%#*%@%-
           *=@@%%%@@@@%@@%%@@@@@@@@@@@@@@@ .  ...@-:#*=*###=#@*+@*=+*+=+=#% ..*#:...:=@@#%@@@@%#%%#%@@@@#@@@@-
           *=@@@%%%@@@@@@@@@%@%%@@@@@@@@@@.@%    @@@@@@=:..:=+@@*==:.=+=-*= +.@@@@@@@@@@#%@@@@@%#%##%@@@*#+@@*=
           #-%#@#%%@@@%%@@@@@@@@@@@@@@@@@@ :@%-#:@@@@@@@@@@@@@@*-::@@@@@@@@.@.@@@@@@@@@%#%%@@%@@####@@@%+%#@+=-
@@ -141,48 +133,43 @@ jobs:
           y0 = PADDING + FONT_SIZE
           x0 = PADDING
 
-          # Generate SVG for each theme
-          for theme_name, theme in THEMES.items():
-              BG_COLOR = theme["bg"]
-              FG_COLOR = theme["fg"]
-              OUTPUT_PATH = theme["output"]
+          groups = []
+          for i, line in enumerate(lines):
+              escaped_line = html.escape(line, quote=False)
+              y = round(y0 + i * LINE_HEIGHT, 2)
+              begin_time = i * LINE_DELAY
+              
+              # FIX 1: Move <g> OUTSIDE <text> and FIX 2: Hardcode fill colors
+              groups.append(
+                  f'<g opacity="0">\n'
+                  f'  <animate attributeName="opacity" values="0;1" keyTimes="0;1" '
+                  f'dur="0.05s" begin="{begin_time:.3f}s" fill="freeze" repeatCount="1"/>\n'
+                  f'  <text fill="{FG_COLOR}" xml:space="preserve"><tspan x="{x0}" y="{y}">{escaped_line}</tspan></text>\n'
+                  f'</g>'
+              )
 
-              groups = []
-              for i, line in enumerate(lines):
-                  escaped_line = html.escape(line, quote=False)
-                  y = round(y0 + i * LINE_HEIGHT, 2)
-                  begin_time = i * LINE_DELAY
-                  
-                  groups.append(
-                      f'<g opacity="0">\n'
-                      f'  <animate attributeName="opacity" values="0;1" keyTimes="0;1" '
-                      f'dur="0.05s" begin="{begin_time:.3f}s" fill="freeze" repeatCount="1"/>\n'
-                      f'  <text fill="{FG_COLOR}" xml:space="preserve"><tspan x="{x0}" y="{y}">{escaped_line}</tspan></text>\n'
-                      f'</g>'
-                  )
+          total_type_time = (len(lines) - 1) * LINE_DELAY + 0.1
+          last_line_len = len(lines[-1])
+          cursor_x = round(PADDING + last_line_len * CHAR_WIDTH + 2, 2)
+          cursor_y = round(y0 + (len(lines) - 1) * LINE_HEIGHT - FONT_SIZE + 2, 2)
 
-              total_type_time = (len(lines) - 1) * LINE_DELAY + 0.1
-              last_line_len = len(lines[-1])
-              cursor_x = round(PADDING + last_line_len * CHAR_WIDTH + 2, 2)
-              cursor_y = round(y0 + (len(lines) - 1) * LINE_HEIGHT - FONT_SIZE + 2, 2)
+          cursor = f'<rect x="{cursor_x}" y="{cursor_y}" width="{round(CHAR_WIDTH*0.6, 2)}" height="{FONT_SIZE}" fill="{FG_COLOR}" opacity="0"><animate attributeName="opacity" values="1;0" dur="0.6s" begin="{total_type_time:.3f}s" repeatCount="indefinite" /></rect>'
 
-              cursor = f'<rect x="{cursor_x}" y="{cursor_y}" width="{round(CHAR_WIDTH*0.6, 2)}" height="{FONT_SIZE}" fill="{FG_COLOR}" opacity="0"><animate attributeName="opacity" values="1;0" dur="0.6s" begin="{total_type_time:.3f}s" repeatCount="indefinite" /></rect>'
-
-              svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{canvas_w}px" height="{canvas_h}px" viewBox="0 0 {canvas_w} {canvas_h}" font-family="Consolas,'Courier New',monospace" font-size="{FONT_SIZE}px">
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{canvas_w}px" height="{canvas_h}px" viewBox="0 0 {canvas_w} {canvas_h}" font-family="Consolas,'Courier New',monospace" font-size="{FONT_SIZE}px">
           <rect width="{canvas_w}" height="{canvas_h}" rx="12" fill="{BG_COLOR}"/>
           {chr(10).join(groups)}
           {cursor}
           </svg>'''
 
-              os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-              with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-                  f.write(svg)
-              print(f"Wrote {OUTPUT_PATH} ({theme_name}): {canvas_w}x{canvas_h}px")
+          os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+          with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+              f.write(svg)
+          print(f"Wrote {OUTPUT_PATH}: {canvas_w}x{canvas_h}px, Terminal reveal animation")
 
-      - name: Commit updated SVGs
+      - name: Commit updated SVG
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/ascii-art-dark.svg assets/ascii-art-light.svg
-          git diff --staged --quiet || git commit -m "Rebuild ASCII terminal reveal (light & dark)"
+          git add assets/ascii-art.svg
+          git diff --staged --quiet || git commit -m "Rebuild ASCII terminal reveal"
           git push

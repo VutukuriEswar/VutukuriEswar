@@ -110,6 +110,10 @@
 <img src="https://opengraph.githubassets.com/1/VutukuriEswar/Diverge" width="24%"/>
 </a>
 
+<a href="https://github.com/VutukuriEswar/TalentScan">
+<img src="https://opengraph.githubassets.com/1/VutukuriEswar/TalentScan" width="24%"/>
+</a>
+
 </p>
 
 ---

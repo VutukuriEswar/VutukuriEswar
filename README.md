@@ -46,8 +46,8 @@
 
 <p align="center">
 
-<a href="https://github.com/Satwika8932/Unemployment_Forecasting_Model">
-<img src="https://opengraph.githubassets.com/1/Satwika8932/Unemployment_Forecasting_Model" width="24%"/>
+<a href="https://github.com/Satwika-Malla/Unemployment_Forecasting_Model">
+<img src="https://opengraph.githubassets.com/1/Satwika-Malla/Unemployment_Forecasting_Model" width="24%"/>
 </a>
 
 <a href="https://github.com/VutukuriEswar/ImageDehazing">

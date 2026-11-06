@@ -6,7 +6,7 @@
 
 🎓 **B.Tech CSE (AI & ML)** — VIT-AP University  
 📊 **CGPA: 8.71 / 10**  
-🧠 Passionate about **Artificial Intelligence, DL & RL models**
+🧠 Passionate about **Artificial Intelligence, ML, DL & RL models**
 
 ### 🔭 Currently Focused On
 

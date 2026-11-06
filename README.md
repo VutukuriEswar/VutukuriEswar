@@ -24,7 +24,7 @@
 <img src="https://skillicons.dev/icons?i=python,java&theme=dark" height="60"/>
 
 #### 🤖 AI / Machine Learning
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch&theme=dark" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="60"/>
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch&theme=dark" height="60"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="50"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="50"/>
 
 #### 🌐 Full Stack Development
 <img src="https://skillicons.dev/icons?i=react,fastapi,mongodb&theme=dark" height="60"/>

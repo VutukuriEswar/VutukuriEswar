@@ -96,6 +96,10 @@
 <img src="https://opengraph.githubassets.com/1/vaishnavivutukuri/Resonance" width="24%"/>
 </a>
 
+<a href="https://github.com/yasaswivenkat/TruthGuard">
+<img src="https://opengraph.githubassets.com/1/yasaswivenkat/TruthGuard" width="24%"/>
+</a>
+
 </p>
 
 ---
